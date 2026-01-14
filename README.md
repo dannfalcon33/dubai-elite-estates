@@ -1,6 +1,22 @@
 # Dubai Elite Estates
 
+![Portada](screen/portada.png)
+
 Una landing page de ultra-lujo para bienes raíces en Dubái, diseñada para transmitir exclusividad, elegancia y prestigio. Este proyecto utiliza tecnologías modernas para garantizar un rendimiento óptimo, una estética premium y una experiencia de usuario fluida en todos los dispositivos.
+
+## Screens
+
+### Desktop
+
+![Desktop](screen/desktop.png)
+
+### Tablet
+
+![Tablet](screen/tablet.png)
+
+### Mobile
+
+![Mobile](screen/mobile.png)
 
 ## 📋 Descripción del Proyecto
 
