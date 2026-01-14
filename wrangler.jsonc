@@ -1,7 +1,6 @@
 {
   "name": "dubai-elite-estates",
-  "pages_build_output_dir": "./dist",
-  "compatibility_date": "2024-09-23",
+  "compatibility_date": "2026-01-14",
   "assets": {
     "directory": "./dist"
   }
