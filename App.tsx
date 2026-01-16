@@ -29,10 +29,12 @@ import {
 import LeadModal from "./components/LeadModal";
 import PropertyCarousel from "./components/PropertyCarousel";
 import ComparisonTool from "./components/ComparisonTool";
+import LoadingScreen from "./components/LoadingScreen";
 import PropertyDetailsModal from "./components/PropertyDetailsModal";
 import { Property } from "./types";
 
 const App: React.FC = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProperty, setSelectedProperty] = useState<Property | null>(
     null
@@ -73,6 +75,9 @@ const App: React.FC = () => {
       className="relative h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth no-scrollbar bg-black text-white"
       ref={scrollRef}
     >
+      <AnimatePresence>
+        {isLoading && <LoadingScreen onComplete={() => setIsLoading(false)} />}
+      </AnimatePresence>
       {/* Floating Header */}
       <header className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-6 md:px-12 py-6 pointer-events-none mix-blend-difference text-white">
         <motion.div

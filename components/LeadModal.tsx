@@ -56,7 +56,7 @@ const LeadModal: React.FC<LeadModalProps> = ({ isOpen, onClose }) => {
             initial={{ scale: 0.95, opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.95, opacity: 0, y: 20 }}
-            className="relative w-full max-w-lg bg-zinc-900/40 backdrop-blur-md border border-zinc-700/50 shadow-2xl overflow-hidden"
+            className="relative w-full max-w-lg bg-zinc-900/40 backdrop-blur-md border border-zinc-700/50 shadow-2xl overflow-hidden max-h-[85vh] flex flex-col"
           >
             <button
               onClick={handleClose}
@@ -66,7 +66,7 @@ const LeadModal: React.FC<LeadModalProps> = ({ isOpen, onClose }) => {
             </button>
 
             {!submitted ? (
-              <div className="p-8 md:p-10">
+              <div className="p-8 md:p-10 overflow-y-auto flex-1">
                 <h3 className="text-3xl font-serif text-amber-500 mb-2">
                   {MODAL_CONTENT.form.title}
                 </h3>
